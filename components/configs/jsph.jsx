@@ -7,6 +7,6 @@ export const config = {
         {title: 'id', content: user => user.id},
         {title: 'name', content : ({name}) => name},
         {title: 'email', content : ({email}) => <Email email={email}/>},
-        {title: 'address', content : (({address}) => <MapLink geo={address.geo} text={`${address.city} ${address.geo}}`}/>) }
+        {title: 'address', content : (({address}) => <MapLink geo={address.geo} text={`${address.city} ${address.street}`}/>) }
     ]
 }
